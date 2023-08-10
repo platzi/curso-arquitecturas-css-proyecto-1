@@ -1,4 +1,4 @@
-.main-hero {
+.hero__container {
     background-color: var(--eagle-green);
     width: 100%;
     height: 100vh;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.main-hero-elements {
+.hero {
     display: flex;
     flex-direction: column;
     gap: 8rem;
@@ -16,7 +16,7 @@
     padding: 0 2rem;
 }
 
-.hero-description--container {
+.hero__article {
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
