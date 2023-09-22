@@ -1,43 +1,28 @@
-.main-social-tree {     /* General distribution */
+.social-media-section {     /* General distribution */
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 3.2rem;
+    padding-bottom: 0.8rem;
 }
 
-.social-tree-title {        /* Styles of CONTAINER of title of social list */
-    display: flex; 
-    align-content: center;
-    justify-content: center;
+.social-media-section__title {        /* Styles of CONTAINER of title of social list */
     width: 100%;
-    height: 100%;
     padding: 0.8rem;
     margin-bottom: 1.2rem;
     background-color: var(--blue-sapphire);
-}
-
-.social-tree-title p{       /* Styles of title of social list */
     font-size: 1.6rem;
     text-align: center;
     color: white;
 }
 
-.social-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 2.4rem;
-}
-
-.social-list li{        /* Size of Every LI */
+.social-media-section__element {        /* Size of Every LI */
     width: 72%;
     height: 5rem;
+    margin: 0 auto 2.4rem;
 }
 
-.social-list--link{
+.social-media-section__link {
     display: flex;
-    flex-direction: row;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -51,96 +36,66 @@
     transition-duration: var(--short-transition-time);
 }
 
-.img-span {         /* Size of imgs of social list */
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.img-span img {
+.social-media-section__logo {
     max-width: 100%;
     height: 100%;
-    object-fit: contain;
 }
 
-/* #instagram--link:hover > span > img{
-    transition: opacity transform filter;
-    transition-duration: var(--short-transition-time); 
-} */   /* Change img while transition */
-
 @media (any-hover: hover) {
-    .social-list--link:hover {           /* hover for list options */
+    .social-media-section__link:hover {           /* hover for list options */
         background-color: var(--blue-sapphire);
         transform: scale(1.1);
         color: white;
     }
 
-     #instagram--link:hover > span {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
+    #instagram--link:hover > .social-media-section__logo {
+        content: url("https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg");
     }
-
-     #instagram--link:hover > span > img{
-        /* transform: scale(0.7);
-        filter: brightness(0) invert(1); */
-        opacity: 0;
-    } 
 }
 
 @media only screen and (min-width: 768px) {  /* Tablet */
-    .social-list {
+    .social-media-section {     /* General distribution */
+        align-items: center;
+        padding-bottom: 2.4rem;
+    }
+
+    .social-media-section__list {
         width: 96%;
         display: flex;
-        flex-direction: row;
-        justify-items: center;
-        align-content: center;
+        justify-content: center;
         gap: 1.2rem;
-    }
+    }    
 
-    .main-social-tree {     /* General distribution */
-        align-items: center;
-        margin-bottom: 2.4rem;
-    }
-
-    .social-list li{        /* Size of Every LI */
+    .social-media-section__element {        /* Size of Every LI */
         width: calc(100% / 8);
         height: 10rem;
+        margin: 0;
     }
 
-    .social-list--link{
+    .social-media-section__link {
         gap: 1.2rem;
         flex-direction: column;
         justify-content: center;
     }
 
-    .img-span {         /* Size of imgs of social list */
+    .social-media-section__logo {         /* Size of imgs of social list */
         max-height: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 
 @media only screen and (min-width: 1024px) {  /* Desktop - laptop */
-    .main-social-tree {
-        width: 100%;
+    .social-media-section {
+        flex-direction: row;
         height: 20rem;
         max-height: 24vh;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
-    .social-tree-title {
+    .social-media-section__title {
         margin-bottom: 0;
         width: 16%;
-    }
-
-    .social-tree-title p{
+        height: 100%;
         display: flex;
         align-items: center;
     }
-    
 }

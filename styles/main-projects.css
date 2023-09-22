@@ -1,18 +1,12 @@
-.main-projects {
+.projects-section {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--midnight-green);
+    background: var(--midnight-green) url("https://bnz07pap001files.storage.live.com/y4mprfTjvibGalWe_Q0Lv9e3l4U0v91W_8YT9g9uvr7edGbST0JHVHBZSAWFkgg69e6--Fg58_hbDAzUwaGH2bfqL3J8G6I2OUh1EU3bTyn3TyBxlNXdj1h5buBVtg2npr15HeK99IDabk_DgUgFknVE-NEh8vj3h5nSsSd6IbXp1ZY7hfICvqtwh70Jbaz4tb_?width=1024&height=576&cropmode=none") center no-repeat;
+    background-size: cover;
     color: white;
     font-size: 1.6rem;
-}
-
-.main-projects {  /* img to build xd */
-    background-image: url("https://bnz07pap001files.storage.live.com/y4mprfTjvibGalWe_Q0Lv9e3l4U0v91W_8YT9g9uvr7edGbST0JHVHBZSAWFkgg69e6--Fg58_hbDAzUwaGH2bfqL3J8G6I2OUh1EU3bTyn3TyBxlNXdj1h5buBVtg2npr15HeK99IDabk_DgUgFknVE-NEh8vj3h5nSsSd6IbXp1ZY7hfICvqtwh70Jbaz4tb_?width=1024&height=576&cropmode=none");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
