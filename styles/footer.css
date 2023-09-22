@@ -1,4 +1,4 @@
-footer {
+.footer {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,6 @@ footer {
     color: white;
 }
 
-footer p:first-child{
+.footer__copyright {
     width: 40vw;
 }

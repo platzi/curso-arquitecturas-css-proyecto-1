@@ -1,6 +1,6 @@
 let menuIcon = document.getElementById("menu-icon")
 let menuList = document.getElementById("nav-list")
-let menuLink = document.getElementsByClassName("nav-link")
+let menuLink = document.getElementsByClassName("navbar__link")
 let divHider = document.getElementById("nav-body-hider")
 
 function crearListeners( ){                 //Crear listeners para los elementos a escuchar
@@ -11,14 +11,14 @@ function crearListeners( ){                 //Crear listeners para los elementos
 }
 
 function showmenu() {                                   //Pone clases en CSS que muestran el menu
-    menuList.classList.toggle("nav-list--show")
-    menuIcon.classList.toggle("menu-icon-img--show")
+    menuList.classList.toggle("navbar__list--show")
+    menuIcon.classList.toggle("navbar__menu-icon--show")
     divHider.classList.toggle("nav-body-hider--show")
 }
 
 function hidemenu() {                                   //QUITA clases en CSS que muestran el menu
-    menuList.classList.toggle("nav-list--show")
-    menuIcon.classList.toggle("menu-icon-img--show")
+    menuList.classList.toggle("navbar__list--show")
+    menuIcon.classList.toggle("navbar__menu-icon--show")
     divHider.classList.toggle("nav-body-hider--show")
 }
 
